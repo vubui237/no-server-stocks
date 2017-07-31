@@ -1,0 +1,29 @@
+<div class="mainColors">  
+    <h3>Evaluate a stock</h3>
+    <input type="text" ng-model="searchData" placeholder="Stock SYMBOL" class="inputColors" style="width: 110px"><button class="buttonColors stockValidate" type="button" ng-click="getStock(searchData,time,range)">Search</button>
+    <select ng-model="time" convert-to-number style="background-color: black">
+    <option style="display:none" value="">min/h/d/w/m</option>
+    <option value="1">1 minute</option>
+    <option value="5">5 minutes</option>
+    <option value="15">15 minutes</option>
+    <option value="30">30 minutes</option>
+    <option value="60">Hourly</option>
+    <option value="DAILY">Daily</option>
+    <option value="WEEKLY">Weekly</option>
+    <option value="MONTHLY">Monthly</option>
+    </select>
+    <input type="text" placeholder="Range" ng-model= "range" class="inputColors" style="width: 48px">
+
+    
+    <br>
+    <p class="stockSymbol">Symbol: {{getDatas['Meta Data']['2. Symbol']}}<br>
+    Updated: {{getDatas['Meta Data']['3. Last Refreshed']}}<br>
+    Current Price: {{getDatas[times][getDatas['Meta Data']['3. Last Refreshed']]['1. open']}}</p>
+</div>
+<div class="mainColors">  
+        <canvas id="line" class="chart chart-line" chart-data="tipsValue"
+        chart-labels="tipsDate" chart-series="series" chart-options="options"
+        chart-click="onClick">
+        </canvas>
+
+</div>

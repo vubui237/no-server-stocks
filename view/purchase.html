@@ -1,0 +1,53 @@
+<div class="mainColors">  
+        <div class = "troll">Yo monay belongs to me now</div>
+<h2> Purchase Stock</h2>
+<!-- Dr. Bakare Tunde MD, Prince Nigeria & Deja Chief Executer Offices, appreciate you business. You receive 400% return soon -->
+ <form data-toggle="validator" role="form">
+     <div class="form-group has-feedback">
+        <label for="inputName" class="control-label"></label>
+        <div class="input-group">
+        <span class="input-group-addon">Name</span>
+        <input type="text" pattern="^[A-Za-z\s]+$" maxlength="200" class="form-control" id="inputName" placeholder="I.E.: Isabella Stevie" required>
+        </div>
+        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+        <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group has-feedback">
+        <label for="inputAddress" class="control-label"></label>
+        <div class="input-group">
+        <span class="input-group-addon">Address</span>
+        <input type="text" pattern="^[0-9A-Za-z\s]+$" maxlength="200" class="form-control" id="inputAddress" placeholder="I.E.: 500 S Ervay Apt#510, Dallas TX 75201" required>
+        </div>
+        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+        <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group has-feedback">
+        <label for="inputCC" class="control-label"></label>
+        <div class="input-group">
+        <span class="input-group-addon">Credit Card</span>
+        <input type="text" pattern="[0-9]{13,19}$" maxlength="19" class="form-control" id="inputCC" placeholder="Enter your card without spaces or - I.E.: 4147202413053992" required>
+        </div>
+        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+        <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+    <div class="form-inline row">
+      <div class="form-group col-sm-6">Symbol
+        <input type="text" pattern="^[a-zA-Z]+$" maxlength="10" class="form-control" id="inputSymbol" placeholder="Example: AAPL" required>
+        <div class="help-block with-errors"></div>
+      </div>
+      <div class="form-group col-sm-6">Shares
+        <input type="text" pattern="[0-9]{1,100}$" maxlength="1000" class="form-control" id="inputSymbol" placeholder="I.E: 12, whole #s only" required>
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+  </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-default glyphicon glyphicon-ok troll2" ng-click="scam()"></button>
+        
+    </div>                    
+</form>
+</div>
+
+
