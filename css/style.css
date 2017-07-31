@@ -1,5 +1,5 @@
 html {
-  background-image: url("/css/maxresdefault.jpg")
+  background-image: url("./maxresdefault.jpg")
 }
 body {
   padding-top: 50px;
@@ -36,7 +36,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba( 0, 0, 0, .2 ) url('/css/giphy.gif') 50% 50% no-repeat;
+    background: rgba( 0, 0, 0, .2 ) url('./giphy.gif') 50% 50% no-repeat;
 }
 .stockSymbol {
   display: none;
